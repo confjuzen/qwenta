@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" href="./img/Qwenta.png" />
+    <script src="https://unpkg.com/pagedjs/dist/paged.polyfill.js"></script>
+    <title>Qwenta</title>
+  </head>
+  <body>
+    <main>
+        <h1 class="center ">
+            <img class="logo" src="./img/Qwenta.svg" alt="Qwenta Logo" />
+        <h1>
+        <h2 class="center">
+            Menu Builder pour Restaurants
+        </h2>
+        <pre>
+            <blockquote>
+            Qwenta est une application web permettant aux restaurateurs de créer, gérer et personnaliser plusieurs menus (plats, boissons, desserts), avec images, prix et options personnalisables. Une version mobile est envisagée à l'avenir.
+            </blockquote>
+        </pre>
+        <hr />
+        <ul>
+            <li>Veille</li>
+            <li>Specifications Techniques</li>
+            <li>Kanban</li>
+        </ul>
+        <hr />
+        <h3 id="frontend" class="break center">FRONTEND</h3>
+        <h4 id="vue" class="center"><a href="https://vuejs.org/">VUE.js</a>  -  <a href="https://vite.dev/">VITE</a>  -  <a href="https://pagedjs.org/">PAGED.js</a></h4>
+        <hr />
+
+        <h5 class="center">VUE.js</h5>
+            <p>
+                Un Framework JavaScript progressif, léger et performant, idéal pour les SPA. Dispose également d'un très bon service de modèles, qui est très bien pour les modèles de menus personnalisés.
+            </p>
+            <a class="flex" href="https://fr.vuejs.org/guide/introduction.html#single-file-components"><img src="./img/Screenshot 2025-04-18 at 22-04-47 Introduction Vue.js.png" alt="Vue.js"></a>
+            <ul  class="break">
+                <strong>Pourquoi ce choix ?</strong>
+
+                <li>
+                    Sa facilité d'intégration avec Firebase
+                </li>
+                <li>
+                    Léger et performant
+                </li>
+                <li>
+                    Un 'template' très bien pour les menus personnalisés
+                </li>
+            </ul>
+            <ul>
+                <strong>Intégration Facile :</strong>
+                <li>
+                    <a href="https://vite.dev/guide/">Vite</a>Pour
+                    transformer les composants .vue et pour minifier les fichiers .js
+                </li>
+                <li>
+                    <a href="https://vue-loader.vuejs.org/guide/css-modules.html#usage"
+                        >CSS Modules</a
+                    >Pour créer des Modules CSS Modules pour etre plus performant
+                </li>
+                <li>
+                    <a href="https://router.vuejs.org/">Vue Router</a>Gestion des
+                    routes (ex. : menus, dashboard, profil)
+                </li>
+                <li>
+                    <a href="https://vuex.vuejs.org/">Vuex</a>Pour gérer l&#39;état
+                    global (ex. : menus en cours, utilisateur connecté)
+                </li>
+                <li id="-int-gration-firebase-vue"><a href="https://vuefire.vuejs.org/">Firebase</a>Facilite la connexion aux services Firebase (authentification, DB, stockage, etc.) </li>
+
+            </ul>
+            <h5 class="center break">PAGED.js</h5>
+            <p>Paged.js est une JavaScript library gratuite et open source qui pagine le contenu dans le navigateur pour créer une sortie PDF à partir de n'importe quel contenu HTML. Vous pouvez ainsi concevoir des ouvrages destinés à l'impression (par exemple, des livres) en utilisant HTML et CSS.</p>
+            <a class="flex" href="https://pagedjs.org/about/"><img src="./img/paged.png"></a>
+            <ul >
+                <strong>Pourquoi ce choix ?</strong>
+                <li>
+                    Très simple à utiliser, et peut facilement convertir les modèles .vue au format PDF (ex. : A4, ou autre).           </li>
+                <li>
+                    Léger et performant
+                </li>
+                <li>
+                    Un 'template' très bien pour les menus personnalisés
+                </li>
+            </ul>
+
+
+      <h3 id="backend" class="break center">BACKEND</h3>
+      <h4 id="vue" class="center"><a href="https://stripe.com/fr/payments">STRIPE</a>  -  <a href="https://firebase.google.com/">FIREBASE</a></h4>
+      <hr />
+      <h5 class="center">STRIPE</h5>
+      <p>Acceptez les paiements en ligne et en personne partout dans le monde grâce à un système de paiement conçu pour toutes les entreprises, des start-up aux grandes multinationales.</p>
+      <a class="flex" href="https://stripe.com/fr/payments"><img src="./img/stripe.png" alt="Stripe"></a>
+
+
+
+      <ul><strong>Pourquoi ce choix ?</strong>
+        <li>
+          API de paiement utilisée pour gérer des services de paiement en ligne.
+        </li>
+        <li>
+          Facile à connecter via Firebase Functions et Stripe SDK côté Vue
+        </li>
+      </ul>
+      <h5 class="center break">FIREBASE</h5>
+      <p>Configurez votre backend sans gérer de serveurs. Évoluez facilement pour prendre en charge des millions d'utilisateurs grâce à des bases de données, des solutions d'hébergement et de stockage, et des options de calcul. Développez et testez tout en local grâce à nos émulateurs.<br>
+        Avantages sur un backend traditionnel: pas de
+        configuration de serveur (Nginx, Apache), pas de base relationnelle à
+        maintenir (PostgreSQL, MySQL), sécurité et évolutivité intégrées.</p>
+      <a class="flex" href="https://firebase.google.com/"><img src="./img/Firebase.png" alt="Firebase"></a>
+      <ul>
+          <strong>Pourquoi ce choix ?</strong>
+            <li>
+              Faible maintenance (pas de serveur à configurer)
+            </li>
+            <li>Intégration directe avec Vue</li>
+            <li>Scalabilité automatique</li>
+            <li>
+              Gratuit ou peu coûteux pour les petites
+              structures
+            </li>
+        <li>
+          Realtime Database – Structure NoSQL, idéale pour les
+          menus dynamiques
+        </li>
+
+        <li>
+          Firebase Storage – Stockage des images de plats
+          (intégré facilement dans l'interface admin)
+        </li>
+        <li>
+          Firebase Hosting – Déploiement sécurisé et rapide de
+          l'app
+        </li>
+        <li>
+          Firebase Auth – Authentification complète (email,
+          réseaux sociaux, accès sécurisé)
+        </li>
+      </ul>
+
+    </main>
+  </body>
+</html>
